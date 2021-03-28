@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "dystic-test"
+  },
+  "targets": {
+    "resume-build": {
+      "hosting": {
+        "dystic-test": [
+          "public"
+        ]
+      }
+    }
+  }
+}
