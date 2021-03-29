@@ -1,5 +1,6 @@
 import React from "react";
 import { IoArrowBackOutline } from "react-icons/all";
+import LogoImg from "../../images/logo1.svg";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -14,18 +15,16 @@ export default function Navbar(props) {
         }
       >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className={
-                (props.transparent ? "text-white" : "text-gray-800") +
-                " text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap"
-              }
-              href="/"
-            >
-              dystic
-              <br/>
-              <span className="font-normal text-sm">resume builder</span>
-            </a>
+          <div className="relative flex items-center justify-between h-16">
+            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-shrink-0 flex items-center">
+                <img className="block lg:hidden h-8 w-auto"
+                     src={LogoImg} alt="dystic"/>
+                <img className="hidden lg:block h-8 w-auto"
+                     src={LogoImg} alt="dystic"/>
+                 <h6 className="text-white text-sm font-medium"> &nbsp; builder</h6>
+              </div>
+            </div>
           </div>
           <div
             className={

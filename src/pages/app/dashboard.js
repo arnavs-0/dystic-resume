@@ -6,6 +6,7 @@ import CreateResume from '../../components/dashboard/CreateResume';
 import ResumePreview from '../../components/dashboard/ResumePreview';
 import TopNavbar from '../../components/dashboard/TopNavbar';
 import LoadingScreen from '../../components/router/LoadingScreen';
+import FooterSmall from "../../components/landing/FooterSmall";
 
 const Dashboard = ({ user }) => {
   const { t } = useTranslation();
@@ -80,6 +81,8 @@ const Dashboard = ({ user }) => {
           ))}
         </div>
       </div>
+
+      <FooterSmall absolute />
     </div>
   );
 };
