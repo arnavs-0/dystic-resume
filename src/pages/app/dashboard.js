@@ -7,6 +7,8 @@ import ResumePreview from '../../components/dashboard/ResumePreview';
 import TopNavbar from '../../components/dashboard/TopNavbar';
 import LoadingScreen from '../../components/router/LoadingScreen';
 import FooterSmall from "../../components/landing/FooterSmall";
+import ProgressBar from '../../components/shared/ProgressBar';
+import BufferSpinner from '../../components/BufferSpinner';
 
 const Dashboard = ({ user }) => {
   const { t } = useTranslation();
@@ -75,7 +77,7 @@ const Dashboard = ({ user }) => {
       <div className="container mt-12 px-12 xl:px-0">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8">
           <CreateResume />
-
+          {/*<BufferSpinner />*/}
           {resumes.map((x) => (
             <ResumePreview key={x.id} resume={x} />
           ))}
