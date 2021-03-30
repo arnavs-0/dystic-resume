@@ -7,6 +7,7 @@ import Button from '../../../shared/Button';
 import Heading from '../../../shared/Heading';
 import Input from '../../../shared/Input';
 import styles from './Actions.module.css';
+import { AiOutlineCloudDownload } from "react-icons/all";
 
 const Actions = ({ id }) => {
   const { t } = useTranslation();
@@ -61,65 +62,95 @@ const Actions = ({ id }) => {
     <section>
       <Heading id={id} />
 
-      <div className={styles.container}>
-        <h5>{t('builder.actions.import.heading')}</h5>
+      <div className="mt-5 mb-5">
+        <div className={styles.container}>
+          <h5>{t('builder.actions.import.heading')}</h5>
 
-        <p className="leading-loose">{t('builder.actions.import.text')}</p>
+          <p className="leading-loose">{t('builder.actions.import.text')}</p>
 
-        <div className="mt-4 flex">
-          <Button icon={FaFileImport} onClick={handleImport}>
-            {t('builder.actions.import.button')}
-          </Button>
+          <div className="mt-4 flex">
+            <button
+              onClick={handleExport}
+              className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+              style={{ transition: 'all .15s ease' }}
+              type="button">
+              <FaFileImport /> &nbsp; {t('builder.actions.import.button')}
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className={styles.container}>
-        <h5>{t('builder.actions.export.heading')}</h5>
+      <div className="mt-5 mb-5">
+        <div className={styles.container}>
+          <h5>{t('builder.actions.export.heading')}</h5>
 
-        <p className="leading-loose">{t('builder.actions.export.text')}</p>
+          <p className="leading-loose">{t('builder.actions.export.text')}</p>
 
-        <div className="mt-4 flex">
-          <Button icon={FaFileExport} onClick={handleExport}>
-            {t('builder.actions.export.button')}
-          </Button>
+          <div className="mt-4 flex">
+            <button
+              onClick={handleExport}
+              className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+              style={{ transition: 'all .15s ease' }}
+              type="button">
+              <FaFileExport /> &nbsp; {t('builder.actions.export.button')}
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className={styles.container}>
-        <h5>{t('builder.actions.share.heading')}</h5>
+      <div className="mt-5 mb-5">
+        <div className={styles.container}>
+          <h5>{t('builder.actions.share.heading')}</h5>
 
-        <p className="leading-loose">{t('builder.actions.share.text')}</p>
+          <p className="leading-loose">{t('builder.actions.share.text')}</p>
 
-        <div>
-          <Input
-            type="action"
-            value={getSharableUrl()}
-            onClick={handleOpenLink}
-          />
+          <div>
+            <Input
+              type="action"
+              value={getSharableUrl()}
+              onClick={handleOpenLink}
+            />
+          </div>
         </div>
       </div>
 
-      <div className={styles.container}>
-        <h5>{t('builder.actions.loadDemoData.button')}</h5>
+      <div className="mt-5 mb-5">
+        <div className={styles.container}>
+          <h5>{t('builder.actions.loadDemoData.button')}</h5>
 
-        <p className="leading-loose">
-          {t('builder.actions.loadDemoData.text')}
-        </p>
+          <p className="leading-loose">
+            {t('builder.actions.loadDemoData.text')}
+          </p>
 
-        <div className="mt-4 flex">
-          <Button onClick={handleLoadDemo}>{loadDemoText}</Button>
+          <div className="mt-4 flex">
+            <button
+              onClick={handleLoadDemo}
+              className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+              style={{ transition: 'all .15s ease' }}
+              type="button">
+              <AiOutlineCloudDownload /> &nbsp; {loadDemoText}
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className={styles.container}>
-        <h5>{t('builder.actions.resetEverything.button')}</h5>
+      <div className="mt-5 mb-5">
+        <div className={styles.container}>
+          <h5>{t('builder.actions.resetEverything.button')}</h5>
 
-        <p className="leading-loose">
-          {t('builder.actions.resetEverything.text')}
-        </p>
+          <p className="leading-loose">
+            {t('builder.actions.resetEverything.text')}
+          </p>
 
-        <div className="mt-4 flex">
-          <Button onClick={handleReset}>{resetText}</Button>
+          <div className="mt-4 flex">
+            <button
+              onClick={handleReset}
+              className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+              style={{ transition: 'all .15s ease' }}
+              type="button">
+              {resetText}
+            </button>
+          </div>
         </div>
       </div>
     </section>

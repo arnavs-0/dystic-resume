@@ -69,7 +69,7 @@ const Dashboard = ({ user }) => {
         <title>
           {t('dashboard.title')} | {t('shared.appName')}
         </title>
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://dystic-test.web.app/app/dashboard" />
       </Helmet>
 
       <TopNavbar />

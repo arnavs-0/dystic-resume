@@ -3,7 +3,7 @@ import React, { memo, useState, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiTwitterLine } from 'react-icons/ri';
 import { FaFacebook, FcGoogle, IoPerson, VscPerson } from "react-icons/all";
-import background from '../../images/register_bg_2.png';
+import background from '../../images/register_bg_2.svg';
 import Navbar from './Navbar';
 import FooterSmall from './FooterSmall';
 import UserContext from '../../contexts/UserContext';

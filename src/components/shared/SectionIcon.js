@@ -21,7 +21,7 @@ const SectionIcon = ({ section, containerId, tooltipPlacement }) => {
         offset={-18}
         duration={500}
         containerId={containerId}
-        activeClass="text-primary-900"
+        activeClass="text-red-300"
         className={styles.icon}
       >
         <Icon size="18px" />

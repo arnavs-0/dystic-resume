@@ -5,7 +5,7 @@ const EmptyList = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="py-6 opacity-75 text-center">{t('builder.emptyList')}</div>
+    <div className="py-6 opacity-75 text-center text-white">{t('builder.emptyList')}</div>
   );
 };
 

@@ -14,6 +14,7 @@ const Objective = ({ id }) => {
         name="heading"
         label={t('builder.sections.heading')}
         path={`${id}.heading`}
+        className="mb-6 mt-6"
       />
 
       <Input

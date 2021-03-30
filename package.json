@@ -62,7 +62,7 @@
     "react-toastify": "^7.0.3",
     "short-unique-id": "^3.2.3",
     "styled-components": "^5.2.1",
-    "twin.macro": "^2.3.1",
+    "twin.macro": "^2.3.2",
     "uuid": "^8.3.2",
     "yup": "^0.32.8"
   },

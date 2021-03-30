@@ -24,9 +24,9 @@ const Settings = ({ id }) => {
     SettingsContext,
   );
 
-  const handleChangeTheme = (e) => {
-    setTheme(e.target.value);
-  };
+  // const handleChangeTheme = (e) => {
+  //   setTheme(e.target.value);
+  // };
 
   const handleChangeLanguage = (e) => {
     const lang = e.target.value;
@@ -40,7 +40,7 @@ const Settings = ({ id }) => {
       return;
     }
 
-    setDeleteText('Buh bye! :(');
+    setDeleteText('Bye! :(');
     setTimeout(() => {
       deleteAccount();
     }, 500);
@@ -48,17 +48,9 @@ const Settings = ({ id }) => {
 
   return (
     <section>
-      <Heading id={id} />
+      <Heading id={id}/>
 
-      <Input
-        label={t('builder.settings.theme')}
-        type="dropdown"
-        options={Object.keys(themeConfig)}
-        value={theme}
-        onChange={handleChangeTheme}
-      />
-
-      <label>
+      <label className="mb-6 mt-6">
         <span>{t('builder.settings.language')}</span>
         <div className="relative grid items-center">
           <select onChange={handleChangeLanguage} value={language}>
@@ -75,21 +67,6 @@ const Settings = ({ id }) => {
           />
         </div>
       </label>
-
-      <p className="text-sm leading-loose">
-        <Trans t={t} i18nKey="builder.settings.translate">
-          A
-          <a
-            href="https://github.com/AmruthPillai/Reactive-Resume#translation"
-            rel="noreferrer"
-            target="_blank"
-          >
-            B
-          </a>
-          C
-        </Trans>
-      </p>
-
       <div className={styles.container}>
         <h5>{t('builder.settings.dangerZone.heading')}</h5>
 

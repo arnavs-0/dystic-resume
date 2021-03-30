@@ -59,7 +59,7 @@ const List = ({
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-white">
       <div className={styles.list}>
         {isEmpty(items) ? (
           <EmptyList />
@@ -105,9 +105,13 @@ const List = ({
         )}
       </div>
 
-      <Button outline icon={MdAdd} onClick={handleAdd} className="mt-8 ml-auto">
-        Add New
-      </Button>
+      <button
+        onClick={handleAdd}
+        className="ml-auto bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+        style={{ transition: 'all .15s ease' }}
+        type="button">
+        <MdAdd/> &nbsp; Add New
+      </button>
     </div>
   );
 };

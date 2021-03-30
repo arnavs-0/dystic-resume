@@ -26,8 +26,6 @@ const getComponent = (id) => {
       return Actions;
     case 'settings':
       return Settings;
-    case 'about':
-      return About;
     case 'font-size':
       return FontSize;
     default:
@@ -49,7 +47,7 @@ const SidebarSection = ({ id, event }) => {
 };
 
 const RightSidebar = () => (
-  <div className="flex">
+  <div className="flex bg-gray-900">
     <div id="RightSidebar" className={styles.container}>
       {sections.map(SidebarSection)}
     </div>
