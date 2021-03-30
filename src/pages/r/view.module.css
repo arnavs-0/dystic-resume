@@ -6,8 +6,8 @@
   }
 
   .page {
-    width: 900px;
-    height: 900px;
+    width: 50%;
+    height: 93vh;
 
     @apply block mt-0 mb-6 rounded shadow-2xl overflow-y-scroll	;
   }
