@@ -53,7 +53,7 @@ const ResumeViewer = ({ id }) => {
     }
 
     return (
-      <div className={styles.container}>
+      <div className={styles.container} style={{}}>
         <Helmet>
           <title>
             {resume.name} | {t('shared.appName')}
@@ -63,7 +63,9 @@ const ResumeViewer = ({ id }) => {
 
         <div
           className={styles.page}
-          style={{ backgroundColor: resume.metadata.colors.background }}
+          style={{
+            backgroundColor: resume.metadata.colors.background,
+          }}
         >
           {resume.metadata.template === 'onyx' && <Onyx data={resume} />}
           {resume.metadata.template === 'pikachu' && <Pikachu data={resume} />}

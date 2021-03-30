@@ -6,12 +6,14 @@
   }
 
   .page {
-    width: 800px;
+    width: 900px;
+    height: 900px;
 
-    @apply block my-16 rounded shadow-2xl;
+    @apply block mt-0 mb-6 rounded shadow-2xl overflow-y-scroll	;
   }
 
   .footer {
-    @apply mb-16 text-white text-center opacity-50 leading-loose;
+    background-color: #212121;
+    @apply mb-24 mt-0 text-white text-center opacity-50 leading-loose;
   }
 }

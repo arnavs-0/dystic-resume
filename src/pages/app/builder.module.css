@@ -1,5 +1,5 @@
 .container {
-  @apply relative h-screen w-screen overflow-hidden flex items-start justify-center;
+  @apply relative h-screen w-screen overflow-auto flex items-start justify-center;
 }
 
 .left {

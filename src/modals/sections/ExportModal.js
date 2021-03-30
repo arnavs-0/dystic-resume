@@ -43,18 +43,18 @@ const ExportModal = () => {
         type: isSinglePDF ? 'single' : 'multi',
       });
       const blob = b64toBlob(data, 'application/pdf');
-      const doc = new jsPDF();
-      fetch(`https://dystic-test.web.app/r/${state.id}`)
-        .then((response) => response.text())
-        .then((html) => {
-          const parser = new DOMParser();
-          const pageDoc = parser.parseFromString(html, 'text/html');
-          doc.html(pageDoc, { callback: (doc) => doc.save() });
-          console.log(html);
-        });
+      // const doc = new jsPDF();
+      // fetch(`https://dystic-test.web.app/r/${state.id}`)
+      //   .then((response) => response.text())
+      //   .then((html) => {
+      //     const parser = new DOMParser();
+      //     const pageDoc = parser.parseFromString(html, 'text/html');
+      //     doc.html(pageDoc, { callback: (doc) => doc.save() });
+      //     console.log(html);
+      //   });
       // download(blob, `DysticResume-${state.id}.pdf`, 'application/pdf');
       // alert(state.id);
-      // window.open(`https://dystic-test.web.app/r/${state.id}`, '_blank');
+      window.open(`https://dystic-test.web.app/r/${state.id}`, '_blank');
     } catch (error) {
       toast(t('builder.toasts.printError'));
     } finally {
