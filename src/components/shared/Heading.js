@@ -6,7 +6,7 @@ const Heading = ({ id }) => {
   const { t } = useTranslation();
   const heading = useSelector(`${id}.heading`, t(`builder.sections.${id}`));
 
-  return <h2 className="text-4xl focus:outline-none">{heading}</h2>;
+  return <h2 className="text-xl text-white font-semibold focus:outline-none">{heading}</h2>;
 };
 
 export default memo(Heading);

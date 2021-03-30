@@ -64,7 +64,7 @@ const Layout = ({ id }) => {
 
   return (
     <section>
-      <Heading id={id} />
+      <Heading id={id} className="mb-6" />
 
       <p className="leading-loose">
         {t('builder.layout.text', { count: blocks.length })}
@@ -108,7 +108,13 @@ const Layout = ({ id }) => {
       </div>
 
       <div className="flex">
-        <Button onClick={handleResetLayout}>{resetLayoutText}</Button>
+        <button
+          onClick={handleResetLayout}
+          className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+          style={{ transition: 'all .15s ease' }}
+          type="button">
+          {resetLayoutText}
+        </button>
       </div>
     </section>
   );

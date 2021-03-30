@@ -5,7 +5,7 @@ import themeConfig from '../data/themeConfig';
 const languageStorageItemKey = 'language';
 
 const defaultState = {
-  theme: 'Dark',
+  theme: 'Light',
   setTheme: () => {},
   language: 'en',
   setLanguage: () => {},

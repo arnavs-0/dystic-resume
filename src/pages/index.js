@@ -1,14 +1,9 @@
 import { navigate } from 'gatsby';
 import React, { memo, useState, useContext, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { RiTwitterLine } from 'react-icons/ri';
-import { FcGoogle, VscPerson } from 'react-icons/all';
-import background from '../images/register_bg_2.png';
-import Navbar from '../components/landing/Navbar';
-import FooterSmall from '../components/landing/FooterSmall';
 import UserContext from '../contexts/UserContext';
 import LoginPage from '../components/landing/LoginPage';
 import ProgressBar from '../components/shared/ProgressBar';
+import { Helmet } from "react-helmet";
 
 function Home() {
   const { user } = useContext(UserContext);
@@ -21,6 +16,12 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          dystic - resume builder
+        </title>
+        <link rel="canonical" href="https://dystic-test.web.app/" />
+      </Helmet>
       <LoginPage />
       <ProgressBar />
     </>

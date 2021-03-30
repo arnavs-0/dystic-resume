@@ -26,7 +26,7 @@ const Colors = ({ id }) => {
     <section>
       <Heading id={id} />
 
-      <div className="mb-6 grid grid-cols-8 gap-x-2 gap-y-6">
+      <div className="mb-6 grid grid-cols-8 gap-x-2 gap-y-6 mt-6">
         {colorOptions.map((color) => (
           <div
             key={color}
@@ -46,6 +46,7 @@ const Colors = ({ id }) => {
         label={t('builder.colors.primary')}
         placeholder="#FF4081"
         path="metadata.colors.primary"
+        className="text-white mt-5 mb-5"
       />
 
       <Input
@@ -54,6 +55,7 @@ const Colors = ({ id }) => {
         label={t('builder.colors.text')}
         placeholder="#444444"
         path="metadata.colors.text"
+        className="text-white mt-5 mb-5"
       />
 
       <Input
@@ -62,6 +64,7 @@ const Colors = ({ id }) => {
         label={t('builder.colors.background')}
         placeholder="#FFFFFF"
         path="metadata.colors.background"
+        className="text-white mt-5 mb-5"
       />
     </section>
   );

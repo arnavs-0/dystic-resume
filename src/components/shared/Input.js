@@ -50,7 +50,7 @@ const Input = ({
   return (
     <div className={className}>
       <label htmlFor={uuid}>
-        <span>
+        <span className="text-red-300">
           {label}{' '}
           {isRequired && (
             <span className="opacity-75 font-normal lowercase">
@@ -85,12 +85,12 @@ const Input = ({
               placeholder={placeholder}
             />
 
-            <p className="mt-2 text-sm opacity-75">
+            <p className="mt-2 text-sm opacity-75 text-white">
               <Trans t={t} i18nKey="shared.forms.markdown">
                 A
                 <a
                   href="https://www.markdownguide.org/basic-syntax/"
-                  className="text-blue-600"
+                  className="text-red-300"
                   target="blank"
                 >
                   B

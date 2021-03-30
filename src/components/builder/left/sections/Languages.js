@@ -16,6 +16,7 @@ const Languages = ({ id, event }) => {
         name="heading"
         label={t('builder.sections.heading')}
         path={`${id}.heading`}
+        className="mb-6 mt-6"
       />
 
       <List path={path} event={event} titlePath="name" subtitlePath="fluency" />

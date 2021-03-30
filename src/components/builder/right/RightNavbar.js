@@ -6,7 +6,7 @@ import SyncIndicator from './SyncIndicator';
 
 const RightNavbar = () => (
   <div className={styles.container}>
-    <div className="grid grid-cols-1 gap-4 text-primary-500">
+    <div className="grid grid-cols-1 gap-4 text-gray-200">
       {sections.map((x) => (
         <SectionIcon
           key={x.id}

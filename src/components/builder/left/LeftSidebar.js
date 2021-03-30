@@ -61,7 +61,7 @@ const SidebarSection = ({ id, event }) => {
 };
 
 const LeftSidebar = () => (
-  <div className="flex">
+  <div className="flex bg-gray-900">
     <LeftNavbar />
 
     <div id="LeftSidebar" className={styles.container}>

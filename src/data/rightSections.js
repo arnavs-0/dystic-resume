@@ -3,7 +3,6 @@ import {
   MdDashboard,
   MdFontDownload,
   MdImportExport,
-  MdInfo,
   MdSettings,
   MdStyle,
   MdFormatSize,
@@ -37,9 +36,5 @@ export default [
   {
     id: 'settings',
     icon: MdSettings,
-  },
-  {
-    id: 'about',
-    icon: MdInfo,
   },
 ];
