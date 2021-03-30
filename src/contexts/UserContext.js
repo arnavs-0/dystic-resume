@@ -18,6 +18,9 @@ const defaultState = {
   logout: async () => {},
   loginWithGoogle: async () => {},
   loginAnonymously: async () => {},
+  loginWithFacebook: async () => {},
+  loginWithEmail: async () => {},
+  registerWithEmail: async () => {},
   deleteAccount: async () => {},
 };
 
@@ -58,6 +61,16 @@ const UserProvider = ({ children }) => {
     }
   };
 
+  const loginWithFacebook = async () => {
+    const provider = new firebase.auth.FacebookAuthProvider();
+
+    try {
+      return await firebase.auth().signInWithPopup(provider)
+    } catch (error) {
+      toast.error(error.message)
+    }
+  }
+
   const loginAnonymously = async () => {
     try {
       return await firebase.auth().signInAnonymously();
@@ -65,6 +78,22 @@ const UserProvider = ({ children }) => {
       toast.error(error.message);
     }
   };
+
+  const loginWithEmail = async (email, password) => {
+    try {
+      return await firebase.auth().signInWithEmailAndPassword(email, password);
+    } catch (error) {
+      toast.error(error.message)
+    }
+  }
+
+  const registerWithEmail = async (email, password) => {
+    try {
+      return await firebase.auth().signInWithEmailAndPassword(email, password);
+    } catch (error) {
+      toast.error(error.message)
+    }
+  }
 
   const logout = () => {
     firebase.auth().signOut();
@@ -84,6 +113,7 @@ const UserProvider = ({ children }) => {
     } catch (e) {
       if (e.code === 'auth/requires-recent-login') {
         await loginWithGoogle();
+        //await loginWithFacebook()
         await currentUser.delete();
       }
     } finally {
@@ -102,6 +132,9 @@ const UserProvider = ({ children }) => {
         loading,
         loginWithGoogle,
         loginAnonymously,
+        loginWithFacebook,
+        loginWithEmail,
+        registerWithEmail,
         deleteAccount,
       }}
     >

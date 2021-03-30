@@ -6,6 +6,7 @@ import CreateResume from '../../components/dashboard/CreateResume';
 import ResumePreview from '../../components/dashboard/ResumePreview';
 import TopNavbar from '../../components/dashboard/TopNavbar';
 import LoadingScreen from '../../components/router/LoadingScreen';
+import FooterSmall from "../../components/landing/FooterSmall";
 import ProgressBar from '../../components/shared/ProgressBar';
 import BufferSpinner from '../../components/BufferSpinner';
 
@@ -82,6 +83,8 @@ const Dashboard = ({ user }) => {
           ))}
         </div>
       </div>
+
+      <FooterSmall absolute />
     </div>
   );
 };
