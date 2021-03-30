@@ -58,7 +58,7 @@ const ResumeViewer = ({ id }) => {
           <title>
             {resume.name} | {t('shared.appName')}
           </title>
-          <link rel="canonical" href={`https://rxresu.me/r/${id}`} />
+          <link rel="canonical" href={`https://dystic-test.web.app/r/${id}`} />
         </Helmet>
 
         <div
@@ -76,7 +76,7 @@ const ResumeViewer = ({ id }) => {
         </div>
 
         <p className={styles.footer}>
-          Built with <Link to="/">Reactive Resume</Link>
+          Built with <Link to="/">Dystic Resume</Link>
         </p>
       </div>
     );

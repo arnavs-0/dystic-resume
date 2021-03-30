@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 
 admin.initializeApp();
 
-const BASE_URL = 'https://rxresu.me/r/';
+const BASE_URL = 'https://dystic-test.web.app/r/';
 
 function timeout(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -72,7 +72,7 @@ exports.printResume = functions
 
     const browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox'],
+      // args: ['--no-sandbox'],
     });
     const page = await browser.newPage();
     await page.goto(BASE_URL + id, {

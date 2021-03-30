@@ -7,7 +7,7 @@ import Wrapper from '../components/shared/Wrapper';
 const FrequentlyAskedQuestions = () => (
   <Wrapper>
     <Helmet>
-      <title>Frequently Asked Questions | Reactive Resume</title>
+      <title>Frequently Asked Questions | Dystic Resume</title>
       <link rel="canonical" href="https://rxresu.me/app/dashboard" />
     </Helmet>
 

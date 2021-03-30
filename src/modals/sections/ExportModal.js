@@ -42,7 +42,7 @@ const ExportModal = () => {
         type: isSinglePDF ? 'single' : 'multi',
       });
       const blob = b64toBlob(data, 'application/pdf');
-      download(blob, `RxResume-${state.id}.pdf`, 'application/pdf');
+      download(blob, `DysticResume-${state.id}.pdf`, 'application/pdf');
     } catch (error) {
       toast(t('builder.toasts.printError'));
     } finally {
@@ -60,7 +60,7 @@ const ExportModal = () => {
     const data = `data:text/json;charset=utf-8,${encodeURIComponent(
       JSON.stringify(backupObj, null, '\t'),
     )}`;
-    download(data, `RxResume-${state.id}.json`, 'text/json');
+    download(data, `DysticResume-${state.id}.json`, 'text/json');
   };
 
   return (

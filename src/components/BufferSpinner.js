@@ -1,8 +1,7 @@
 import React from 'react';
 import '../styles/BufferSpinner.css';
 
-const BufferSpinner = (props) => {
-  return <div className="loader">Loading...</div>;
-};
+// eslint-disable-next-line no-unused-vars
+const BufferSpinner = (props) => <div className="loader">Loading...</div>;
 
 export default BufferSpinner;
