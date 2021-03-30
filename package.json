@@ -48,6 +48,7 @@
     "gatsby-transformer-remark": "^2.16.0",
     "gatsby-transformer-sharp": "^2.12.0",
     "i18next": "^19.8.7",
+    "jspdf": "^2.3.1",
     "lodash": "^4.17.20",
     "nanoevents": "^5.1.11",
     "postcss": "^8.2.6",

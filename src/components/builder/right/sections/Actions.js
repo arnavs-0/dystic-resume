@@ -1,13 +1,13 @@
 import React, { memo, useContext, useState } from 'react';
 import { FaFileExport, FaFileImport } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { AiOutlineCloudDownload } from 'react-icons/all';
 import ModalContext from '../../../../contexts/ModalContext';
 import { useDispatch, useSelector } from '../../../../contexts/ResumeContext';
 import Button from '../../../shared/Button';
 import Heading from '../../../shared/Heading';
 import Input from '../../../shared/Input';
 import styles from './Actions.module.css';
-import { AiOutlineCloudDownload } from "react-icons/all";
 
 const Actions = ({ id }) => {
   const { t } = useTranslation();
@@ -73,7 +73,8 @@ const Actions = ({ id }) => {
               onClick={handleExport}
               className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
               style={{ transition: 'all .15s ease' }}
-              type="button">
+              type="button"
+            >
               <FaFileImport /> &nbsp; {t('builder.actions.import.button')}
             </button>
           </div>
@@ -91,7 +92,8 @@ const Actions = ({ id }) => {
               onClick={handleExport}
               className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
               style={{ transition: 'all .15s ease' }}
-              type="button">
+              type="button"
+            >
               <FaFileExport /> &nbsp; {t('builder.actions.export.button')}
             </button>
           </div>
@@ -127,7 +129,8 @@ const Actions = ({ id }) => {
               onClick={handleLoadDemo}
               className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
               style={{ transition: 'all .15s ease' }}
-              type="button">
+              type="button"
+            >
               <AiOutlineCloudDownload /> &nbsp; {loadDemoText}
             </button>
           </div>
@@ -147,7 +150,8 @@ const Actions = ({ id }) => {
               onClick={handleReset}
               className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
               style={{ transition: 'all .15s ease' }}
-              type="button">
+              type="button"
+            >
               {resetText}
             </button>
           </div>
