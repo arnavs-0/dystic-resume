@@ -48,7 +48,7 @@ const Settings = ({ id }) => {
 
   return (
     <section>
-      <Heading id={id}/>
+      <Heading id={id} />
 
       <label className="mb-6 mt-6">
         <span>{t('builder.settings.language')}</span>

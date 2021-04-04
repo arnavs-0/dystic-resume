@@ -1,5 +1,5 @@
 import React, { memo, useContext, useState } from 'react';
-import { FaFileExport, FaFileImport } from 'react-icons/fa';
+import { FaFileExport, FaFileImport, FaMagic } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineCloudDownload } from 'react-icons/all';
 import ModalContext from '../../../../contexts/ModalContext';
@@ -8,6 +8,7 @@ import Button from '../../../shared/Button';
 import Heading from '../../../shared/Heading';
 import Input from '../../../shared/Input';
 import styles from './Actions.module.css';
+import ResumeInsightModal from "../../../../modals/ResumeInsightModal";
 
 const Actions = ({ id }) => {
   const { t } = useTranslation();
@@ -95,6 +96,25 @@ const Actions = ({ id }) => {
               type="button"
             >
               <FaFileExport /> &nbsp; {t('builder.actions.export.button')}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-5 mb-5">
+        <div className={styles.container}>
+          <h5>{t('builder.actions.analyze.heading')}</h5>
+
+          <p className="leading-loose">{t('builder.actions.analyze.text')}</p>
+
+          <div className="mt-4 flex">
+            <button
+              onClick={handleExport}
+              className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+              style={{ transition: 'all .15s ease' }}
+              type="button"
+            >
+              <FaMagic /> &nbsp; {t('Analyze Now')}
             </button>
           </div>
         </div>

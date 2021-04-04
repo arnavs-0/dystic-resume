@@ -156,6 +156,11 @@
         "heading": "Share Your Resume",
         "text": "The link below will be accessible publicly if you choose to share it, and viewers would see the latest version of your resume at any time."
       },
+      "analyze": {
+        "heading": "Analyze Your Resume",
+        "text": "Your resume will be analyzed through artificial intelligence and natural language understanding for the best and accurate result.",
+        "button": "Analyze Now"
+      },
       "loadDemoData": {
         "text": "Unclear on what to do with a fresh blank page? Load some demo data to see how a resume should look and you can start editing from there.",
         "button": "Load Demo Data"
