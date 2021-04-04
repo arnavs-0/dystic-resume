@@ -60,6 +60,7 @@
     "react-icons": "^4.2.0",
     "react-markdown": "^5.0.3",
     "react-scroll": "^1.8.1",
+    "react-skills-bars": "^1.0.0-development",
     "react-toastify": "^7.0.3",
     "short-unique-id": "^3.2.3",
     "styled-components": "^5.2.1",
