@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ResumeInsightModal.css';
 import { toast } from 'react-toastify';
-import SkillBar from 'react-skillbars';
-
+// import SkillBar from 'react-skillbars';
+import SkillBar from '../components/builder/right/SkillBar';
 
 function ResumeInsightModal(props) {
   const [concepts, setConcepts] = useState([]);
@@ -53,6 +53,7 @@ function ResumeInsightModal(props) {
         });
       }
     });
+
   }, []);
 
   const colors = {
@@ -62,15 +63,22 @@ function ResumeInsightModal(props) {
       background: '#1A2E35',
     },
   };
-  return (
-    <div className="resume-insight-modal-container">
-      <p className="rim-title">{props.resumeID} Resume Insight</p>
-      <p className="font-weight-bold">Emotions</p>
-      <SkillBar skills={emotions} colors={colors} />
-      <p className="font-weight-bold">Keywords</p>
-      <SkillBar skills={concepts} colors={colors} />
 
-      {/* <SkillBar skills={concepts}/> */}
+  // console.log(concepts)
+
+  return (
+    <div className="resume-insight-modal-container h-full overflow-y-auto">
+      <p className="rim-title">{props.resumeID} Resume Insight</p>
+      <p className="font-bold">Emotions</p>
+      {emotions.map((e) => (
+        <SkillBar percent={e.level} label={e.type} />
+      ))}
+      <p className="font-bold">Keywords</p>
+      {
+        concepts.map(e => (
+          <SkillBar percent={e.level} label={e.type} />
+        ))
+      }
     </div>
   );
 }

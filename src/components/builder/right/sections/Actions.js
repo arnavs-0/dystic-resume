@@ -129,15 +129,15 @@ const Actions = ({ id }) => {
               nested
             >
               {(close) => (
-                <div className="modal flex flex-col">
-                  <button className="close self-start ml-5" onClick={close}>
+                <div className="flex flex-col overflow-y-auto">
+                  <button className="close self-start ml-5 focus:outline-none" onClick={close}>
                     &times;
                   </button>
                   <div className="flex justify-center">
                     <ResumeInsightModal resumeID={state.id} />
                   </div>
                   <button
-                    className="button mb-5 self-center bg-gray-700 hover:bg-red-200 rounded-md"
+                    className="button mb-5 self-center bg-gray-700 hover:bg-red-200 rounded-md focus:outline-none focus:ring focus:border-red-300"
                     style={{
                       // backgroundColor: '#172930',
                       color: '#fff',
