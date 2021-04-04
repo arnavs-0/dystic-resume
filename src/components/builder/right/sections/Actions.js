@@ -77,7 +77,7 @@ const Actions = ({ id }) => {
 
           <div className="mt-4 flex">
             <button
-              onClick={handleExport}
+              onClick={handleImport}
               className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
               style={{ transition: 'all .15s ease' }}
               type="button"
