@@ -137,13 +137,12 @@ const Actions = ({ id }) => {
                     <ResumeInsightModal resumeID={state.id} />
                   </div>
                   <button
-                    className="button mb-5 self-center hoverTurnPink"
+                    className="button mb-5 self-center bg-gray-700 hover:bg-red-200 rounded-md"
                     style={{
-                      backgroundColor: '#172930',
+                      // backgroundColor: '#172930',
                       color: '#fff',
                       width: '30%',
                       height: '50px',
-                      borderRadius: '50px',
                     }}
                     onClick={() => {
                       close();
