@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ResumeInsightModal.css';
-import SkillBar from 'react-skills-bars';
 import { toast } from 'react-toastify';
+import SkillBar from 'react-skillbars';
+
 
 function ResumeInsightModal(props) {
   const [concepts, setConcepts] = useState([]);
