@@ -26,7 +26,7 @@ function ResumeInsightModal(props) {
           // console.log({type: v.text, level: v.relevance*100})
           setConcepts((prev) => [
             ...prev,
-            { type: v.text, level: (v.relevance * 100).toFixed(4) },
+            { type: v.text, level: (v.relevance * 100).toFixed(2) },
           ]);
         });
         Object.keys(value.emotion.document.emotion).map((key, index) => {
@@ -34,7 +34,7 @@ function ResumeInsightModal(props) {
             ...prevState,
             {
               type: capitalize(key),
-              level: value.emotion.document.emotion[key] * 100,
+              level: (value.emotion.document.emotion[key] * 100).toFixed(2),
             },
           ]);
         });
