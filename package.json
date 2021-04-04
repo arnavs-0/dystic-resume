@@ -62,6 +62,7 @@
     "react-scroll": "^1.8.1",
     "react-skills-bars": "^1.0.0-development",
     "react-toastify": "^7.0.3",
+    "reactjs-popup": "^2.0.4",
     "short-unique-id": "^3.2.3",
     "styled-components": "^5.2.1",
     "twin.macro": "^2.3.2",

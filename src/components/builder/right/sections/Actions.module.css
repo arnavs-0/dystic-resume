@@ -9,3 +9,7 @@
 .container p {
   @apply text-sm font-medium;
 }
+
+.hoverTurnPink:hover{
+  background-color: #F4B2B0;
+}

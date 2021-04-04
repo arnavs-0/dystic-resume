@@ -2,13 +2,15 @@ import React, { memo, useContext, useState } from 'react';
 import { FaFileExport, FaFileImport, FaMagic } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineCloudDownload } from 'react-icons/all';
+import Popup from 'reactjs-popup';
 import ModalContext from '../../../../contexts/ModalContext';
 import { useDispatch, useSelector } from '../../../../contexts/ResumeContext';
 import Button from '../../../shared/Button';
 import Heading from '../../../shared/Heading';
 import Input from '../../../shared/Input';
 import styles from './Actions.module.css';
-import ResumeInsightModal from "../../../../modals/ResumeInsightModal";
+import ResumeInsightModal from '../../../../modals/ResumeInsightModal';
+import 'reactjs-popup/dist/index.css';
 
 const Actions = ({ id }) => {
   const { t } = useTranslation();
@@ -57,6 +59,10 @@ const Actions = ({ id }) => {
 
     setResetText(t('builder.actions.resetEverything.button'));
     dispatch({ type: 'reset_data' });
+  };
+
+  const handleAnalyze = () => {
+    alert('Clicked');
   };
 
   return (
@@ -108,14 +114,46 @@ const Actions = ({ id }) => {
           <p className="leading-loose">{t('builder.actions.analyze.text')}</p>
 
           <div className="mt-4 flex">
-            <button
-              onClick={handleExport}
-              className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
-              style={{ transition: 'all .15s ease' }}
-              type="button"
+            <Popup
+              trigger={
+                <button
+                  onClick={handleAnalyze}
+                  className="bg-red-300 active:bg-red-500 text-white font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 mt-5 shadow hover:shadow-md inline-flex items-center font-medium text-xs"
+                  style={{ transition: 'all .15s ease' }}
+                  type="button"
+                >
+                  <FaMagic /> &nbsp; {t('Analyze Now')}
+                </button>
+              }
+              modal
+              nested
             >
-              <FaMagic /> &nbsp; {t('Analyze Now')}
-            </button>
+              {(close) => (
+                <div className="modal flex flex-col">
+                  <button className="close self-start ml-5" onClick={close}>
+                    &times;
+                  </button>
+                  <div className="flex justify-center">
+                    <ResumeInsightModal resumeID={state.id} />
+                  </div>
+                  <button
+                    className="button mb-5 self-center hoverTurnPink"
+                    style={{
+                      backgroundColor: '#172930',
+                      color: '#fff',
+                      width: '30%',
+                      height: '50px',
+                      borderRadius: '50px',
+                    }}
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              )}
+            </Popup>
           </div>
         </div>
       </div>

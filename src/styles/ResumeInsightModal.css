@@ -1,6 +1,6 @@
 .resume-insight-modal-container {
   width: 600px;
-  border: 2px solid #1A2E35;
+  /*border: 2px solid #1A2E35;*/
   border-radius: 20px;
   padding: 30px;
 }
@@ -8,4 +8,8 @@
 .rim-title {
   text-align: center;
   font-size: 20px;
+}
+
+.hoverTurnPink:hover{
+  background-color: #F4B2B0;
 }
