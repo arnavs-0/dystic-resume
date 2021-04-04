@@ -66,7 +66,7 @@ const Layout = ({ id }) => {
     <section>
       <Heading id={id} className="mb-6" />
 
-      <p className="leading-loose">
+      <p className="leading-loose text-white">
         {t('builder.layout.text', { count: blocks.length })}
       </p>
 
