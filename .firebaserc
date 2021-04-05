@@ -9,6 +9,13 @@
           "public"
         ]
       }
+    },
+    "dystic-test": {
+      "hosting": {
+        "resume-dystic": [
+          "public"
+        ]
+      }
     }
   }
 }
