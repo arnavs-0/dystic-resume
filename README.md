@@ -1,17 +1,17 @@
-<img src="https://raw.githubusercontent.com/AmruthPillai/Reactive-Resume/develop/static/images/logo.png" width="256px" />
+<img src="https://i.imgur.com/JKI1USY.png" width="256px" />
 
-## A free and open source resume builder.
+# Dystic Resume Builder
+
+## Resume builder for dystic job search.
 
 [![Crowdin](https://badges.crowdin.net/reactive-resume/localized.svg)](https://crowdin.com/project/reactive-resume)
 [![GitHub](https://img.shields.io/github/license/AmruthPillai/Reactive-Resume)](https://github.com/AmruthPillai/Reactive-Resume/blob/develop/LICENSE)
 
-### [Go to App](https://rxresu.me/)
+### [Try me here](https://dystic-test.web.app/)
 
-### What is this app all about?
+### What is this?
 
-Reactive Resume is a free and open source resume builder that’s built to make the mundane tasks of creating, updating and sharing your resume as easy as 1, 2, 3. With this app, you can create multiple resumes, share them with recruiters through a unique link and print as PDF, all for free, no advertisements, without losing the integrity and privacy of your data.
-
-You have complete control over what goes into your resume, how it looks, what colors, what templates, even the layout in which sections placed. Want a dark mode resume? It’s as easy as editing 3 values and you’re done. You don’t need to wait to see your changes either. Everything you type, everything you change, appears immediately on your resume and gets updated in real time.
+This is the resume builder for our main application, dystic job search. Users can generate their own resume when applying to jobs through dystic. 
 
 ### Features
 
@@ -27,15 +27,18 @@ You have complete control over what goes into your resume, how it looks, what co
 - Easy to translate to your own language
 - Import your existing [JSON Resume](https://jsonresume.org/) in one click
 - No advertisements, no data sharing, no marketing emails
+- Resume analysis powered by Google Cloud Natural Language, quick and accurate.
 - **Everything is free, and there’s no catch!**
 
 ### Screenshots
 
-<img src="https://raw.githubusercontent.com/AmruthPillai/Reactive-Resume/develop/static/images/screenshots/screen-1.png" width="400px" />
+<img src="https://i.imgur.com/y0vHC9M.png" width="400px" />
 &nbsp;
-<img src="https://raw.githubusercontent.com/AmruthPillai/Reactive-Resume/develop/static/images/screenshots/screen-3.png" width="400px" />
+<img src="https://i.imgur.com/6vldAmN.png" width="400px" />
 &nbsp;
-<img src="https://raw.githubusercontent.com/AmruthPillai/Reactive-Resume/develop/static/images/screenshots/screen-5.png" width="400px" />
+<img src="https://i.imgur.com/Qb5oLB0.png" width="400px" />
+&nbsp;
+<img src="https://i.imgur.com/PHgIsNu.png" width="400px" />
 
 ### Translation
 
@@ -84,8 +87,8 @@ Want to run your own instance of Reactive Resume? You are very much free to do s
 1. First, clone this project repository
 
 ```
-git clone https://github.com/AmruthPillai/Reactive-Resume.git
-cd Reactive-Resume
+git clone https://github.com/arnavs-0/dystic-resume
+cd dystic-resume
 ```
 
 2. Run npm install to install dependencies for the project
@@ -111,13 +114,12 @@ FIREBASE_STORAGEBUCKET=""
 
 And that's it! 🎉
 
-### Donation
+### Want to contribute?
 
-I try to do what I can, but if you found the app helpful, or you're in a better position than the others who depend on this project for their first job, please consider donating as little as \$5 to help keep the project alive :)
+Dystic Resume Builder appreciates any support we can get from the open-source community. Feel free to perform QA tests, and report bugs. Fork this repo now and become a contributor.
 
-#### https://www.buymeacoffee.com/AmruthPillai
 
-![Please buy me a coffee](https://i.imgur.com/x7g6kvF.png)
+#### Open a pull request: https://github.com/arnavs-0/dystic-resume/pulls
 
 ### Appreciation
 
@@ -127,4 +129,4 @@ Thank you to everyone who made this project possible, including the many users w
 
 ![The Great Gatsby](https://camo.githubusercontent.com/a615c7e1ef9a850f5427cdc153186763305bb853/68747470733a2f2f692e696d6775722e636f6d2f4472386a3569762e676966)
 
-###### Made with Love by [Amruth Pillai](https://amruthpillai.com/)
+###### Special Thanks to Reactive-Resume Made by [Amruth Pillai](https://amruthpillai.com/)
