@@ -40,38 +40,6 @@ This is the resume builder for our main application, dystic job search. Users ca
 &nbsp;
 <img src="https://i.imgur.com/PHgIsNu.png" width="400px" />
 
-
-##### Languages Currently Supported
-
-- Arabic (عربى)
-- Czech (čeština)
-- Chinese Simplified (简体中文)
-- Danish (Dansk)
-- Dutch (Nederlands)
-- English (US)
-- Finnish (Suomalainen)
-- French (Français)
-- German (Deutsche)
-- Greek (Ελληνικά)
-- Hindi (हिंदी)
-- Italian (Italiano)
-- Japanese (日本人)
-- Kannada (ಕನ್ನಡ)
-- Lithuanian (Lietuvių)
-- Norwegian (Norsk)
-- Persian (Farsi)
-- Polish (Polskie)
-- Portuguese (Brazilian)
-- Portuguese (Portugal)
-- Romanian (Română)
-- Russian (русский)
-- Spanish (Español)
-- Swedish (Svenska)
-- Turkish (Türkçe)
-- Ukrainian (Українська)
-
-Thank you to all the amazing people who have contributed to Reactive Resume by translating it into their native language.
-
 ### Building from Source
 
 Want to run your own instance of Reactive Resume? You are very much free to do so. The requirements to build from source are:
