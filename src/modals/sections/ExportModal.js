@@ -5,7 +5,6 @@ import React, { memo, useContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaPrint } from 'react-icons/fa';
 import { toast } from 'react-toastify';
-import { jsPDF } from 'jspdf';
 import Button from '../../components/shared/Button';
 import ModalContext from '../../contexts/ModalContext';
 import { useSelector } from '../../contexts/ResumeContext';
@@ -54,7 +53,7 @@ const ExportModal = () => {
       //   });
       // download(blob, `DysticResume-${state.id}.pdf`, 'application/pdf');
       // alert(state.id);
-      window.open(`https://dystic-test.web.app/r/${state.id}`, '_blank');
+      window.open(`https://resume-dystic.web.app/r/${state.id}`, '_blank');
     } catch (error) {
       toast(t('builder.toasts.printError'));
     } finally {
