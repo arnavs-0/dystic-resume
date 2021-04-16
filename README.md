@@ -11,7 +11,7 @@
 
 ### What is this?
 
-This is the resume builder for our main application, dystic job search. Users can generate their own resume when applying to jobs through dystic. 
+This is the resume builder for our main application, dystic job search. Users can generate their own resume when applying to jobs through dystic. This builder is convenient and you can create multiple resumes quickly and stylish.
 
 ### Features
 
@@ -28,7 +28,7 @@ This is the resume builder for our main application, dystic job search. Users ca
 - Import your existing [JSON Resume](https://jsonresume.org/) in one click
 - No advertisements, no data sharing, no marketing emails
 - Resume analysis powered by Google Cloud Natural Language, quick and accurate.
-- **Everything is free, and there’s no catch!**
+- **FREE!**
 
 ### Screenshots
 
@@ -40,11 +40,6 @@ This is the resume builder for our main application, dystic job search. Users ca
 &nbsp;
 <img src="https://i.imgur.com/PHgIsNu.png" width="400px" />
 
-### Translation
-
-To translate the app, just fork the repository, go to `src/i18n/locales` and duplicate the `en.json` file to a new file `your-lang-code.json` and translate all of the strings inside. It's a simple process that would take just a few minutes, and by contributing, your name could also be added down below as a contributor.
-
-For those of you familiar with the Crowdin Platform, you could do that too and just head to http://crowdin.com/project/reactive-resume/ to translate the app over there. They have a great interface that helps you navigate through various strings and manage translations.
 
 ##### Languages Currently Supported
 
@@ -116,17 +111,15 @@ And that's it! 🎉
 
 ### Want to contribute?
 
-Dystic Resume Builder appreciates any support we can get from the open-source community. Feel free to perform QA tests, and report bugs. Fork this repo now and become a contributor.
+Dystic Resume Builder appreciates any support we can get from the open-source community. Feel free to perform QA tests, and report bugs. Fork this repo now and become a contributor to make jobs more accessible!
 
 
 #### Open a pull request: https://github.com/arnavs-0/dystic-resume/pulls
 
 ### Appreciation
 
-Thank you to everyone who made this project possible, including the many users who voiced their opinions, created issues and PRs to the original Reactive Resume project, and helped me along the way to make this a reality.
+Thank you to [Andrew Yang](https://github.com/andytubeee) and [Sohil Athare](https://www.linkedin.com/in/sohil-athare-450a9a1a9/) for contributing to this project.
 
 ---
-
-![The Great Gatsby](https://camo.githubusercontent.com/a615c7e1ef9a850f5427cdc153186763305bb853/68747470733a2f2f692e696d6775722e636f6d2f4472386a3569762e676966)
 
 ###### Special Thanks to Reactive-Resume Made by [Amruth Pillai](https://amruthpillai.com/)
