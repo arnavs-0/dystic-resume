@@ -90,4 +90,4 @@ Thank you to [Andrew Yang](https://github.com/andytubeee) and [Sohil Athare](htt
 
 ---
 
-###### Special Thanks to Reactive-Resume Made by [Amruth Pillai](https://amruthpillai.com/)
+###### Special Thanks to Reactive-Resume for the Initial Start!
