@@ -3,9 +3,7 @@
 # Dystic Resume Builder
 
 ## Resume builder for dystic job search.
-
-[![Crowdin](https://badges.crowdin.net/reactive-resume/localized.svg)](https://crowdin.com/project/reactive-resume)
-[![GitHub](https://img.shields.io/github/license/AmruthPillai/Reactive-Resume)](https://github.com/AmruthPillai/Reactive-Resume/blob/develop/LICENSE)
+[![GitHub](https://img.shields.io/github/license/AmruthPillai/Reactive-Resume)](https://github.com/arnavs-0/dystic-resume/blob/main/LICENSE)
 
 ### [Try me here](https://dystic-test.web.app/)
 
